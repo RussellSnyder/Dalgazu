@@ -1,0 +1,34 @@
+.nav {
+    background: transparent;
+
+}
+
+.navbar-brand > img{
+    max-width: 300px
+}
+
+.navbar li a {
+    font-size: 1.2em;
+    color: white;
+}
+
+.navbar ul {
+    margin-right: 50px;
+}
+
+.content-wrapper {
+}
+
+
+.parallax.mikro {
+    /* The image used */
+    background-image: url(../images/mikrologo1.jpg);
+
+    /* Set a specific height */
+    min-height: 750px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
