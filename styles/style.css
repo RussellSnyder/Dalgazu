@@ -17,7 +17,7 @@ nav {
     background: white;
 }
 
-.navbar-brand > img{
+.navbar-brand > img {
     max-width: 150px
 }
 
@@ -29,6 +29,23 @@ nav {
 .content-wrapper {
 }
 
+.welcome {
+    position: relative;
+}
+.intro {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.intro h1 {
+    font-family: 'Sigmar One', cursive;
+    font-size: 5.5em;
+    color: white;
+}
 
 .parallax.mikro {
     /* The image used */
@@ -46,4 +63,14 @@ nav {
 .section {
     position: relative;
     /*padding-top: 150px;*/
+}
+
+.footer-container {
+    background: white;
+}
+footer {
+    text-align: center;
+}
+footer .logo {
+    max-width: 400px;
 }
