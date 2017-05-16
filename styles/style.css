@@ -1,19 +1,29 @@
-.nav {
-    background: transparent;
+body {
+    background: #dbf8ff;
+    position: relative;
+}
 
+header.fixed-navigation {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+nav {
+    padding: 0 !important;
+    background: white;
 }
 
 .navbar-brand > img{
-    max-width: 300px
+    max-width: 150px
 }
 
 .navbar li a {
     font-size: 1.2em;
     color: white;
-}
-
-.navbar ul {
-    margin-right: 50px;
 }
 
 .content-wrapper {
@@ -31,4 +41,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.section {
+    position: relative;
+    /*padding-top: 150px;*/
 }

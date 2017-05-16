@@ -7,58 +7,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
 
     <title>Dalgazu | World Music</title>
 </head>
-<body>
-<nav class="navbar navbar-toggleable-md navbar-light container">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#">
-        <img src="images/logo.png" class="img-fluid d-inline-block align-top" alt="dalgazu">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav navbar-right ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Upcoming</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Members</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<body data-spy="scroll" data-target="#scrollspy-nav" data-offset="200">
+<header class="container-fluid fixed-navigation">
+    <nav class="navbar navbar-toggleable-md navbar-light container" id="scrollspy-nav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="img-fluid d-inline-block align-top" alt="dalgazu">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-right ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#upcoming">Upcoming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#members">Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
 
 <div class="content-wrapper">
+    <div class="" >
+        <div class="intro">
 
-    <img src="https://puppydogweb.com/wp-content/uploads/2015/05/54_2383_Cute-Puppies-puppies-16094619-1280-800.jpg" class="img-fluid mx-auto d-block" alt="">
-    <div class="about container">
-        <h1>Dalgazu is awesome</h1>
+        </div>
+        <img src="https://puppydogweb.com/wp-content/uploads/2015/05/54_2383_Cute-Puppies-puppies-16094619-1280-800.jpg"
+             class="img-fluid mx-auto d-block" alt="">
+    </div>
+    <div id="about" class="about container section" data-spy="scroll" data-target="#scrollspy-nav">
+        <h1>About</h1>
         <h2>We play music and stuff</h2>
         <h3>also, jazzy stuff</h3>
     </div>
 
     <div class="parallax mikro"></div>
 
-    <div class="upcoming container">
+    <div id="upcoming" class="upcoming container section" data-spy="scroll" data-target="#scrollspy-nav">
         <h1>Upcoming</h1>
         <h2>We play music and stuff</h2>
         <h3>also, jazzy stuff</h3>
@@ -66,7 +66,7 @@
 
     <div class="parallax mikro"></div>
 
-    <div class="members container">
+    <div id="members" class="members container section" data-spy="scroll" data-target="#scrollspy-nav">
         <h1>Members</h1>
         <h2>We play music and stuff</h2>
         <h3>also, jazzy stuff</h3>
@@ -74,12 +74,23 @@
 
     <div class="parallax mikro"></div>
 
-    <div class="contact container">
+    <div id="contact" class="contact container section" data-spy="scroll" data-target="#scrollspy-nav">
         <h1>Contact</h1>
         <h2>We play music and stuff</h2>
         <h3>also, jazzy stuff</h3>
     </div>
 
 </div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+
 </body>
 </html>
