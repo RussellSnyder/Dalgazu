@@ -12,7 +12,7 @@
 
     <title>Dalgazu | World Music</title>
 </head>
-<body data-spy="scroll" data-target="#scrollspy-nav" data-offset="200">
+<body data-spy="scroll" data-target="#scrollspy-nav" data-offset="150">
 <div id="fb-root"></div>
 <script>(function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -205,8 +205,9 @@
 
 </div>
 
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
@@ -215,6 +216,26 @@
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
 
+<script>
+    $("nav ul li a[href^='#']").on('click', function(e) {
+
+        // prevent default anchor click behavior
+        e.preventDefault();
+
+        var navOffset;
+        navOffset = $('.navbar').height();
+        // store hash
+        var hash = this.hash;
+
+        // animate
+        $('html, body').animate({
+            scrollTop: $('.section' + hash).offset().top - navOffset
+        }, 500, function(){
+            window.location.hash = hash;
+        });
+
+    });
+</script>
 
 </body>
 </html>
