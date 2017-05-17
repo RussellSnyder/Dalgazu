@@ -56,6 +56,25 @@ nav {
 }
 
 
+.section.members .member {
+    margin-bottom: 50px;
+}
+
+
+.way-to-contact.direct {
+    margin-bottom: 20px;
+}
+.way-to-contact.direct h3 {
+    margin-top: 50px;
+}
+
+.way-to-contact.direct div {
+    font-size: 22px;
+    color: #333;
+}
+
+
+
 .parallax {
     min-height: 500px;
     background-attachment: fixed;
