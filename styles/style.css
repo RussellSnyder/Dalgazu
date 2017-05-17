@@ -34,7 +34,7 @@ nav {
 }
 .intro {
     position: absolute;
-    top: 200px;
+    bottom: -30px;
     left: 0;
     right: 0;
     margin: auto;
@@ -44,25 +44,58 @@ nav {
 .intro h1 {
     font-family: 'Sigmar One', cursive;
     font-size: 5.5em;
-    color: white;
+    color: #61161A;
+}
+.intro h2 {
+    font-family: 'Sigmar One', cursive;
 }
 
-.parallax.mikro {
-    /* The image used */
-    background-image: url(../images/mikrologo1.jpg);
+.section.about {
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
 
-    /* Set a specific height */
-    min-height: 750px;
-    /* Create the parallax scrolling effect */
+
+.parallax {
+    min-height: 500px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax.mikro {
+    background-position-y: 100px;
+    min-height: 800px;
+    background-image: url(../images/mikrologo1.jpg);
+}
+.parallax.upcoming {
+    background-image: url(https://static1.squarespace.com/static/519a41eae4b00c954c6074d0/51b204b5e4b016cb6cb4c970/51b204bbe4b016cb6cb4cbc7/1370621203014/Stendig-Calendar.jpg);
+}
+.parallax.music {
+    background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/16/article-2540893-1AB759DE00000578-439_634x586.jpg);
+}
+.parallax.members {
+    min-height: 500px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Distorted_Harmony_band_members.jpg);
+}
+.parallax.contact {
+    background-image: url(http://cdn.trendhunterstatic.com/thumbs/tele2-giant-phone.jpeg);
+}
+
+
 
 .section {
     position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
     /*padding-top: 150px;*/
+}
+
+.section h1 {
+    margin-bottom: 20px;
+}
+.members .member {
+    margin-bottom: 15px;
 }
 
 .footer-container {

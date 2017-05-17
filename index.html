@@ -13,6 +13,16 @@
     <title>Dalgazu | World Music</title>
 </head>
 <body data-spy="scroll" data-target="#scrollspy-nav" data-offset="200">
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=775636195901722";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <header class="container-fluid fixed-navigation">
     <nav class="navbar navbar-toggleable-md navbar-light container" id="scrollspy-nav">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -32,6 +42,9 @@
                     <a class="nav-link" href="#upcoming">Upcoming</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#music">Music</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#members">Members</a>
                 </li>
                 <li class="nav-item">
@@ -46,46 +59,148 @@
 <div class="content-wrapper">
     <div class="mx-auto d-block section welcome">
         <div class="intro">
-            <h1>World Music With Soul</h1>
+            <h1>World Music</h1>
+            <h2>Since 2017</h2>
         </div>
-        <img src="https://puppydogweb.com/wp-content/uploads/2015/05/54_2383_Cute-Puppies-puppies-16094619-1280-800.jpg"
-             class="img-fluid" alt="">
+        <img src="images/logo.png" style="max-width: 800px" class="img-fluid mx-auto d-block" alt="">
     </div>
     <div id="about" class="about container section" data-spy="scroll" data-target="#scrollspy-nav">
         <h1>About</h1>
-        <h2>We play music and stuff</h2>
-        <h3>also, jazzy stuff</h3>
+        <p>Dalgazul ist eine internationale Band, deren Musiker türkische, chilenische, kubanische, amerikanische und
+            deutsche Wurzeln haben. Verschiedenste Stile, von der Klassik bis zu lateinamerikanischer und orientalischer
+            Musik kommen hier zusammen. Alle Stücke sind Eigenkompositionen. Rhythmische Flexibilität, harmonische
+            Vielfalt und stilistisch unterschiedliche Kompositionen zeichnen Dalgazul aus.</p>
+        <p>Der Begriff Dalgazul setzt sich aus dem türkischen Wort Dalga für Welle/Woge und dem spanischen Wort azul für
+            blau zusammen. Es symbolisiert die Offenheit der Band für alle Einflüsse, seien sie musikalischer oder
+            kultureller Art.</p>
     </div>
 
-    <div class="parallax mikro"></div>
+    <div class="parallax upcoming"></div>
 
     <div id="upcoming" class="upcoming container section" data-spy="scroll" data-target="#scrollspy-nav">
         <h1>Upcoming</h1>
-        <h2>We play music and stuff</h2>
-        <h3>also, jazzy stuff</h3>
+        <div class="fb-container mx-auto text-center">
+
+            <div class="fb-page" data-href="https://www.facebook.com/Dalgazu-222597461564122/" data-tabs="events"
+                 data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                 data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/Dalgazu-222597461564122/" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/Dalgazu-222597461564122/">Dalgazu</a></blockquote>
+            </div>
+        </div>
     </div>
 
-    <div class="parallax mikro"></div>
+    <div class="parallax music"></div>
+
+    <div id="music" class="music container section" data-spy="scroll" data-target="#scrollspy-nav">
+        <h1>Music</h1>
+        <iframe width="100%" height="600" class="trailer mx-auto" src="https://www.youtube.com/embed/GsZ7lS11q5c"
+                frameborder="0" allowfullscreen></iframe>
+        <h3 class="text-center pt-4">We are currently working on a CD. Come back again soon!</h3>
+    </div>
+
+    <div class="parallax members"></div>
 
     <div id="members" class="members container section" data-spy="scroll" data-target="#scrollspy-nav">
-        <h1>Members</h1>
-        <h2>We play music and stuff</h2>
-        <h3>also, jazzy stuff</h3>
+        <h1 class="my-2">Members</h1>
+        <div class="row">
+            <div class="col-sm-6 member">
+                <img src="http://lorempixel.com/800/400/people/1/" alt="" class="img-fluid">
+                <h3 class="name pt-2">Funda</h3>
+                <strong>Voilin, Voice, Percussion, Composer</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
+                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
+                    possimus praesentium reprehenderit rerum sequi.</p>
+                <a href="https://www.lifeart-taekwondo.de">Personal Website</a>
+            </div>
+            <div class="col-sm-6 member">
+                <img src="http://lorempixel.com/800/400/people/2/" alt="" class="img-fluid">
+                <h3 class="name pt-2">Pablo</h3>
+                <strong>Guitar, Vocals, Composition</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
+                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
+                    possimus praesentium reprehenderit rerum sequi.</p>
+                <a href="#">Personal Website</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 member">
+                <img src="http://lorempixel.com/800/400/people/3/" alt="" class="img-fluid">
+                <h3 class="name pt-2">Alberto</h3>
+                <strong>Piano</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
+                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
+                    possimus praesentium reprehenderit rerum sequi.</p>
+                <a href="#">Personal Website</a>
+            </div>
+            <div class="col-sm-4 member">
+                <img src="http://lorempixel.com/800/400/people/4/" alt="" class="img-fluid">
+                <h3 class="name pt-2">Jakob</h3>
+                <strong>Percussion</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
+                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
+                    possimus praesentium reprehenderit rerum sequi.</p>
+                <a href="#">Personal Website</a>
+            </div>
+            <div class="col-sm-4 member">
+                <img src="http://lorempixel.com/800/400/people/5/" alt="" class="img-fluid">
+                <h3 class="name pt-2">Russell</h3>
+                <strong>Bass</strong>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
+                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
+                    possimus praesentium reprehenderit rerum sequi.</p>
+                <a href="#">Personal Website</a>
+            </div>
+        </div>
     </div>
 
-    <div class="parallax mikro"></div>
+    <div class="parallax contact"></div>
 
     <div id="contact" class="contact container section" data-spy="scroll" data-target="#scrollspy-nav">
         <h1>Contact</h1>
-        <h2>We play music and stuff</h2>
-        <h3>also, jazzy stuff</h3>
+        <div class="col-sm-10 offset-sm-1">
+            <div class="contact-person mb-4 text-center">
+                <h3>Contact person</h3>
+                <h4>Funda</h4>
+            </div>
+            <div class="ways-to-contact row">
+                <div class="col-sm-4 phone way-to-contact">
+                    <h3>Phone</h3>
+                    <div>
+                        555-555-55555
+                    </div>
+                </div>
+                <div class="col-sm-4 email way-to-contact">
+                    <h3>Email</h3>
+                    <div>
+                        dalgazu@dalgazu.com
+                    </div>
+                </div>
+                <div class="col-sm-4 facebook way-to-contact">
+                    <h3>Facebook</h3>
+                    <div class="div">
+                        <div class="fb-page" data-href="https://www.facebook.com/Dalgazu-222597461564122/" data-tabs="homes" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Dalgazu-222597461564122/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Dalgazu-222597461564122/">Dalgazu</a></blockquote></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
 
-<div class="container-fluid footer-container">
+<div class="parallax mikro"></div>
+
+<div class="container-fluid footer-container p-4">
     <footer>
-        <img src="images/logo.png" class="img-fluid d-inline-block logo mx-auto" alt="dalgazu">
+        <!--<div class="top">-->
+            <!--<img src="images/logo.png" class="img-fluid d-inline-block logo mx-auto" alt="dalgazu">-->
+        <!--</div>-->
+        <div class="middle">
+            &copy; 2017
+        </div>
+        <div class="bottom">
+            Built by <a href="http://www.russellsnyder.io/">Russell</a>. Do you want one?
+        </div>
     </footer>
 
 </div>
