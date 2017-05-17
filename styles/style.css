@@ -1,128 +1,126 @@
 body {
-    background: #dbf8ff;
-    position: relative;
+  background: #dbf8ff;
+  position: relative;
 }
-
 header.fixed-navigation {
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10000;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
 }
-
 nav {
-    padding: 0 !important;
-    background: white;
+  padding: 0 !important;
+  background: white;
 }
-
-.navbar-brand > img {
-    max-width: 150px
+nav .navbar-brand > img {
+  max-width: 150px;
 }
-
-.navbar li a {
-    font-size: 1.2em;
-    color: white;
+nav.navbar li a {
+  font-size: 1.2em;
+  color: white;
 }
-
-.content-wrapper {
+nav.navbar li.support {
+  margin-left: 35px;
+  text-decoration: underline;
 }
-
 .welcome {
-    position: relative;
+  position: relative;
 }
 .intro {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
 }
-
+h1,
+h2,
+h3 {
+  font-family: 'Sigmar One', cursive;
+}
+h3 {
+  font-weight: lighter;
+}
 .intro h1 {
-    font-family: 'Sigmar One', cursive;
-    font-size: 5.5em;
-    color: #61161A;
+  font-size: 5.5em;
+  color: #61161A;
 }
-.intro h2 {
-    font-family: 'Sigmar One', cursive;
-}
-
 .section.about {
-    margin-top: 50px;
-    padding-bottom: 100px;
+  margin-top: 50px;
+  padding-bottom: 100px;
 }
-
-
 .section.members .member {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
-
-
 .way-to-contact.direct {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .way-to-contact.direct h3 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
-
 .way-to-contact.direct div {
-    font-size: 22px;
-    color: #333;
+  font-size: 22px;
+  color: #333;
 }
-
-
-
 .parallax {
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .parallax.mikro {
-    background-position-y: 100px;
-    min-height: 800px;
-    background-image: url(../images/mikrologo1.jpg);
+  background-position-y: 100px;
+  min-height: 800px;
+  background-image: url(../images/mikrologo1.jpg);
 }
 .parallax.upcoming {
-    background-image: url(https://static1.squarespace.com/static/519a41eae4b00c954c6074d0/51b204b5e4b016cb6cb4c970/51b204bbe4b016cb6cb4cbc7/1370621203014/Stendig-Calendar.jpg);
+  background-image: url(https://static1.squarespace.com/static/519a41eae4b00c954c6074d0/51b204b5e4b016cb6cb4c970/51b204bbe4b016cb6cb4cbc7/1370621203014/Stendig-Calendar.jpg);
 }
 .parallax.music {
-    background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/16/article-2540893-1AB759DE00000578-439_634x586.jpg);
+  background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/16/article-2540893-1AB759DE00000578-439_634x586.jpg);
 }
 .parallax.members {
-    min-height: 500px;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Distorted_Harmony_band_members.jpg);
+  min-height: 500px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Distorted_Harmony_band_members.jpg);
+}
+.parallax.support {
+  background-position-y: 100px;
+  min-height: 200px;
+  background-image: url(http://orig07.deviantart.net/3e07/f/2016/196/a/6/a_giant_superhero_in_paris_by_bradsnoopy97-daa2rbm.png);
 }
 .parallax.contact {
-    background-image: url(http://cdn.trendhunterstatic.com/thumbs/tele2-giant-phone.jpeg);
+  background-image: url(http://cdn.trendhunterstatic.com/thumbs/tele2-giant-phone.jpeg);
 }
-
-
-
 .section {
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    /*padding-top: 150px;*/
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /*padding-top: 150px;*/
 }
-
+.section.support .way-to-support {
+  border-left: 4px solid brown;
+  padding: 15px;
+  margin-top: 20px;
+}
+.section.support .patreon-image img {
+  min-height: 420px;
+}
 .section h1 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .members .member {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-
 .footer-container {
-    background: white;
+  background: white;
 }
 footer {
-    text-align: center;
+  text-align: center;
 }
 footer .logo {
-    max-width: 400px;
+  max-width: 400px;
 }
