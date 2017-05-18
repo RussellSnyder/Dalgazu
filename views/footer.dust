@@ -1,0 +1,15 @@
+<div class="container-fluid footer-container p-4">
+    <footer>
+        <!--<div class="top">-->
+        <!--<img src="images/logo.png" class="img-fluid d-inline-block logo mx-auto" alt="dalgazu">-->
+        <!--</div>-->
+        <div class="middle">
+            &copy; 2017
+        </div>
+        <div class="bottom">
+            Built by <a href="http://www.russellsnyder.io/">Russell</a>. Do you want one?
+        </div>
+    </footer>
+
+</div>
+

@@ -19,6 +19,23 @@
     <meta name="keywords" content="Dalgazu, World Music, Turkische Musik, Funda, Juan Pablo, Erlangen, Franken, Germany,
     Kulture Musik, Internation Musik, Diversity, Party Animals">
 
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.6.4/showdown.min.js"></script>
+    <script src="https://unpkg.com/contentful@latest/dist/contentful.min.js"></script>
+
+    <script type="text/javascript" src="bower_components/dustjs-linkedin/dist/dust-full.js"></script>
+    <script type="text/javascript" src="bower_components/dustjs-helpers/dist/dust-helpers.min.js"></script>
+
+
+    <script type="text/javascript" src="templates/nav.js"></script>
+    <script type="text/javascript" src="templates/footer.js"></script>
+    <script type="text/javascript" src="templates/welcome.js"></script>
+    <script type="text/javascript" src="templates/members.js"></script>
+    <script type="text/javascript" src="render.js"></script>
 
     <title>Dalgazu | World Music</title>
 </head>
@@ -33,50 +50,10 @@
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<header class="container-fluid fixed-navigation">
-    <nav class="navbar navbar-toggleable-md navbar-light container" id="scrollspy-nav">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-            <img src="images/logo.png" class="img-fluid d-inline-block align-top" alt="dalgazu">
-        </a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav navbar-right ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#upcoming">Upcoming</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#music">Music</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#members">Members</a>
-                </li>
-                <li class="nav-item support">
-                    <a class="nav-link" href="#support">Support Us!</a>
-                </li>
-                <li class="nav-item contact">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-</header>
+<header class="container-fluid fixed-navigation" id="nav"></header>
 
 <div class="content-wrapper">
-    <div class="mx-auto d-block section welcome">
-        <div class="intro">
-            <h1>World Music</h1>
-            <h3>With a touch of Indie and Jazz</h3>
-        </div>
-        <img src="images/logo.png" style="max-width: 800px" class="img-fluid mx-auto d-block" alt="">
-    </div>
+    <div class="mx-auto d-block section welcome" id="welcome"></div>
     <div id="about" class="about container section" data-spy="scroll" data-target="#scrollspy-nav">
         <h1>About</h1>
         <p>Dalgazul ist eine internationale Band, deren Musiker türkische, chilenische, kubanische, amerikanische und
@@ -111,62 +88,7 @@
         <h3 class="text-center pt-4">We are currently working on a CD. Will you <a href="#support">Help us?</a></h3>
     </div>
 
-    <div class="parallax members"></div>
-
-    <div id="members" class="members container section" data-spy="scroll" data-target="#scrollspy-nav">
-        <h1 class="my-2 pb-3">Members</h1>
-        <div class="row">
-            <div class="col-md-6 member">
-                <img src="http://lorempixel.com/800/600/people/1/" alt="" class="img-fluid">
-                <h3 class="name pt-2">Funda</h3>
-                <strong>Voilin, Voice, Percussion, Composer</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
-                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
-                    possimus praesentium reprehenderit rerum sequi.</p>
-                <a href="https://www.lifeart-taekwondo.de">Personal Website</a>
-            </div>
-            <div class="col-md-6 member">
-                <img src="http://lorempixel.com/800/600/people/2/" alt="" class="img-fluid">
-                <h3 class="name pt-2">Pablo</h3>
-                <strong>Guitar, Vocals, Composition</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
-                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
-                    possimus praesentium reprehenderit rerum sequi.</p>
-                <a href="#">Personal Website</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 member">
-                <img src="http://lorempixel.com/800/600/people/3/" alt="" class="img-fluid">
-                <h3 class="name pt-2">Alberto</h3>
-                <strong>Piano</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
-                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
-                    possimus praesentium reprehenderit rerum sequi.</p>
-                <a href="#">Personal Website</a>
-            </div>
-            <div class="col-md-4 member">
-                <img src="http://lorempixel.com/800/600/people/4/" alt="" class="img-fluid">
-                <h3 class="name pt-2">Jakob</h3>
-                <strong>Percussion</strong>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, animi commodi consectetur
-                    consequatur, cum dolore eius ex expedita, fuga incidunt libero maxime molestiae mollitia placeat
-                    possimus praesentium reprehenderit rerum sequi.</p>
-                <a href="#">Personal Website</a>
-            </div>
-            <div class="col-md-4 member">
-                <img src="images/russell.jpg" alt="" class="img-fluid">
-                <h3 class="name pt-2">Russell</h3>
-                <strong>Bass</strong>
-                <p>Russell ist Musiker eines Musikers, er strebt danach, seine Mitmusiker zu leuchten. Er gewann
-                    durch seine Studien in improvisierter und elektronischer Musik in Montreal und Edinburgh viel
-                    Musikerlebnis und spielte mit Bassisten mit mehreren musikalischen Gruppen auf der ganzen Welt.
-                    Russell ist sicher nicht schüchtern und ist immer auf der Suche,
-                    um neue Leute zu treffen und mit künstlerischen Bemühungen zu helfen.</p>
-                <a href="http://www.russellsnyder.io/" target="_blank">russellsnyder.io</a>
-            </div>
-        </div>
-    </div>
+    <div class="section" id="members"></div>
 
     <div class="parallax support"></div>
 
@@ -178,7 +100,7 @@
                 <h3>Patreon</h3>
                 <div class="patreon-image">
                     <a href="https://www.patreon.com/peterhollens" target="_blank">
-                        <img src="https://c3.patreon.com/2/patreon.user/tnNFrQ5BHHE6hX9ZcAPUI0INUL2whkpnE6KoB2GSc9e5HgjWLwlVFr37V0Nhgtfs_large_2.jpeg?t=1495125443&w=1920&v=69q4jVlzqGh1xHs4pzYpbMZmO3Snyk_1fhRnphd4Ksk%3D" class="w-100" alt="patreaon image">
+                        <img src="http://media.gettyimages.com/photos/american-actor-van-johnson-as-the-minstrel-in-the-television-series-picture-id650857449" class="w-100" alt="patreaon image">
                     </a>
                 </div>
             </div>
@@ -219,25 +141,7 @@
 
 <div class="parallax mikro"></div>
 
-<div class="container-fluid footer-container p-4">
-    <footer>
-        <!--<div class="top">-->
-        <!--<img src="images/logo.png" class="img-fluid d-inline-block logo mx-auto" alt="dalgazu">-->
-        <!--</div>-->
-        <div class="middle">
-            &copy; 2017
-        </div>
-        <div class="bottom">
-            Built by <a href="http://www.russellsnyder.io/">Russell</a>. Do you want one?
-        </div>
-    </footer>
 
-</div>
-
-<script
-        src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
@@ -247,24 +151,14 @@
 
 <script>
     $("nav ul li a[href^='#']").on('click', function (e) {
-
-        // prevent default anchor click behavior
         e.preventDefault();
-
-        var navOffset;
-        navOffset = $('.navbar').height();
-        // store hash
-        var hash = this.hash;
-
-        // animate
+        var hash =  this.hash.substring(1, this.hash.length);
         $('html, body').animate({
-            scrollTop: $('.section' + hash).offset().top - navOffset
+            scrollTop: $('.section .body.' + hash).offset().top - $('.navbar').height()
         }, 500, function () {
             window.location.hash = hash;
         });
-
     });
 </script>
-
 </body>
 </html>

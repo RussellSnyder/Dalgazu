@@ -1,0 +1,23 @@
+<div class="parallax members" id="member-parallax"
+     style="background-image: url('{parallaxPhoto}');
+             min-height: {parallaxHeight}px">
+</div>
+
+<div class="members body container section" data-spy="scroll" data-target="#scrollspy-nav">
+    <h1 class="my-2 pb-3">{title}</h1>
+    <div class="row">
+        {#members}
+            <div class="col-md-{@eq key=founder value="true" type="string"}6{:else}4{/eq} member">
+                <img src="{photoSrc}" alt="photo of {name}" class="img-fluid">
+                <h3 class="name pt-2">{name}</h3>
+                <strong>{role}</strong>
+                <p>{description|s}</p>
+                {?websiteUrl}
+                    <a href="{websiteUrl}" target="_blank">{websiteTitle}</a>
+                {/websiteUrl}
+            </div>
+        {/members}
+    </div>
+</div>
+
+
