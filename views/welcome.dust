@@ -2,4 +2,4 @@
     <h1>{title}</h1>
     <h3>{subtitle}</h3>
 </div>
-<img src="{logo}" style="max-width: 800px" class="img-fluid mx-auto d-block" alt="{title}">
+<img src="{logo}" class="main-logo img-fluid mx-auto d-block" alt="{title}">

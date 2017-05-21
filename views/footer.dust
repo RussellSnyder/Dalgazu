@@ -4,12 +4,14 @@
         <!--<img src="images/logo.png" class="img-fluid d-inline-block logo mx-auto" alt="dalgazu">-->
         <!--</div>-->
         <div class="middle">
-            &copy; 2017
+            &copy; 2017 <a href="http://www.russellsnyder.io/">Russell</a> (the bass player)
         </div>
         <div class="bottom">
-            Built by <a href="http://www.russellsnyder.io/">Russell</a>. Do you want one?
+            Backend from &nbsp;
+            <a href="https://www.contentful.com/" target="_blank">
+                <img src="https://mavens.com/wp-content/uploads/2015/09/logo-contentful.png" alt="contentful" width="100px" class="img-fluid">
+            </a>
         </div>
     </footer>
-
 </div>
 

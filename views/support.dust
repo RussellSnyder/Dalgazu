@@ -1,0 +1,31 @@
+<div class="parallax support" id="support-parallax"
+     style="background-image: url('{parallaxPhoto}');
+             min-height: {parallaxHeight}px">
+</div>
+
+<div class="support container section body" data-spy="scroll" data-target="#scrollspy-nav">
+    <h1>{headline}</h1>
+    <div class="row">
+        <div class="description">
+            {description|s}
+        </div>
+        {?waysToSupport}
+            <div class="ways-to-support row">
+                {#waysToSupport}
+                    <div class="col-md-6 way-to-support">
+                        <h3>{title}</h3>
+                        <div class="image">
+                            <a href="{link}" target="_blank">
+                                <img src="{src}" class="w-100" alt="{title}">
+                            </a>
+                        </div>
+                        <div class="description">
+                            {description|s}
+                                <a href="{link}" target="_blank" class="btn btn-info">{link}</a>
+                        </div>
+                    </div>
+                {/waysToSupport}
+            </div>
+        {/waysToSupport}
+    </div>
+</div>

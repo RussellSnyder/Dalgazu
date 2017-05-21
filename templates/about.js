@@ -1,0 +1,1 @@
+!function(){function t(t,e){return t.write('<div id="about" class="about container body section" data-spy="scroll" data-target="#scrollspy-nav"><h1>').reference(e.get(["title"],!1),e,"h").write("</h1>").reference(e.get(["description"],!1),e,"h",["s"]).write("</div>")}return dust.register("about",t),t}();

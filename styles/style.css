@@ -1,6 +1,32 @@
+* {
+  color: white;
+}
 body {
-  background: #dbf8ff;
+  background: black;
   position: relative;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Sigmar One', cursive;
+}
+h1 {
+  color: #CDA307;
+}
+h2 {
+  color: #D49B6B;
+}
+h3 {
+  color: #CDA307;
+  font-weight: lighter;
+}
+.intro h1 {
+  color: #D49B6B;
+}
+@media (min-width: 800px) {
+  .intro h1 {
+    font-size: 5.5em;
+  }
 }
 header.fixed-navigation {
   background: white;
@@ -28,6 +54,11 @@ nav.navbar li.support {
   margin-left: 35px;
   text-decoration: underline;
 }
+.main-logo {
+  max-height: 500px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
 .welcome {
   position: relative;
 }
@@ -39,24 +70,15 @@ nav.navbar li.support {
   margin: auto;
   text-align: center;
 }
-h1,
-h2,
-h3 {
-  font-family: 'Sigmar One', cursive;
-}
-h3 {
-  font-weight: lighter;
-}
-.intro h1 {
-  font-size: 5.5em;
-  color: #61161A;
-}
 .section.about {
   margin-top: 50px;
-  padding-bottom: 100px;
 }
 .section.members .member {
   margin-bottom: 50px;
+}
+.section h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 .way-to-contact.direct {
   margin-bottom: 20px;
@@ -77,11 +99,8 @@ h3 {
   background-position-y: 120px;
 }
 .parallax.mikro {
-  min-height: 800px;
+  min-height: 450px;
   background-image: url(../images/mikrologo1.jpg);
-}
-.parallax.upcoming {
-  background-image: url(https://static1.squarespace.com/static/519a41eae4b00c954c6074d0/51b204b5e4b016cb6cb4c970/51b204bbe4b016cb6cb4cbc7/1370621203014/Stendig-Calendar.jpg);
 }
 .parallax.music {
   background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/16/article-2540893-1AB759DE00000578-439_634x586.jpg);
@@ -94,28 +113,29 @@ h3 {
 .parallax.contact {
   background-image: url(http://cdn.trendhunterstatic.com/thumbs/tele2-giant-phone.jpeg);
 }
-.section {
+@media (max-width: 600px) {
+  .parallax {
+    min-height: 200px !important;
+  }
+}
+.content-wrapper > .section {
   position: relative;
-  padding-top: 40px;
   padding-bottom: 40px;
   /*padding-top: 150px;*/
 }
-.section.support .way-to-support {
+.content-wrapper > .section.support .way-to-support {
   border-left: 4px solid brown;
   padding: 15px;
   margin-top: 20px;
 }
-.section.support .patreon-image img {
+.content-wrapper > .section.support .patreon-image img {
   min-height: 420px;
-}
-.section h1 {
-  margin-bottom: 20px;
 }
 .members .member {
   margin-bottom: 15px;
 }
-.footer-container {
-  background: white;
+.footer-container a {
+  color: #CDA307;
 }
 footer {
   text-align: center;

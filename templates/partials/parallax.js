@@ -1,0 +1,1 @@
+!function(){function e(e,r){return e.write('<div class="parallax ').reference(r.get(["section"],!1),r,"h").write('" id="section-parallax"style="background-image: url(\'').reference(r.get(["parallaxPhoto"],!1),r,"h").write("');min-height: ").reference(r.get(["parallaxHeight"],!1),r,"h").write('px"></div>')}return dust.register("parallax",e),e}();

@@ -1,0 +1,29 @@
+<div class="parallax upcoming"
+     style="background-image: url('{parallaxPhoto}'); min-height: {parallaxHeight}px">
+</div>
+
+<div id="upcoming" class="upcoming container body section" data-spy="scroll" data-target="#scrollspy-nav">
+    <h1>Upcoming</h1>
+    <div class="row">
+    <div class="col-md-6">
+        {#events}
+            <div class="event">
+                <h4 class="date">{date}</h4>
+                <h3 class="title">{title}</h3>
+                <div class="description">
+                    {description|s}
+                </div>
+            </div>
+        {/events}
+    </div>
+    <div class="fb-container col-md-6 text-center">
+        <div class="fb-page" data-href="https://www.facebook.com/dalgazul/" data-tabs="events" data-width="500"
+             data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+             data-show-facepile="false">
+            <blockquote cite="https://www.facebook.com/dalgazul/" class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/dalgazul/">Dalgazul</a></blockquote>
+        </div>
+    </div>
+</div>
+</div>
+

@@ -1,0 +1,31 @@
+<div class="parallax music" id="member-parallax"
+     style="background-image: url('{parallaxPhoto}');
+             min-height: {parallaxHeight}px">
+</div>
+
+<div class="music container body section" data-spy="scroll" data-target="#scrollspy-nav">
+    <h1>{headline}</h1>
+    {?featureVideo}
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="trailer mx-auto embed-responsive-item" src="{featureVideo}"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+    {/featureVideo}
+    {?music}
+        <div class="row music container mt-3">
+            {#music}
+                <div class="col-md-6 music-single">
+                    <h5>{title}  <small class="ml-2">({date})</small></h5>
+                    <audio controls class="w-100">
+                        <source src="{src}" type="audio/mpeg">
+                    </audio>
+                </div>
+            {/music}
+        </div>
+    {/music}
+    {?text}
+        <div class="text text-center mt-4">
+            {text|s}
+        </div>
+    {/text}
+</div>

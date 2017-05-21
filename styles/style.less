@@ -1,160 +1,188 @@
+@primary: #CDA307;
+@secondary: #D49B6B;
+
+* {
+  color: white;
+}
+
 body {
-    background: #dbf8ff;
-    position: relative;
+  background: black;
+  position: relative;
 }
-
-header.fixed-navigation {
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10000;
-}
-
-nav {
-    padding: 0 !important;
-    background: white;
-    .navbar-brand > img {
-        max-width: 150px
-    }
-
-    .navbar-toggler {
-        margin-top: 30px;
-    }
-    &.navbar li {
-        a {
-            font-size: 1.2em;
-            color: white;
-        }
-        &.support {
-            margin-left: 35px;
-            text-decoration: underline;
-        }
-    }
-}
-
-.content-wrapper {
-}
-
-.welcome {
-    position: relative;
-}
-
-.intro {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-align: center;
-}
-
 h1, h2, h3 {
-    font-family: 'Sigmar One', cursive;
+  font-family: 'Sigmar One', cursive;
+}
+
+h1 {
+  color: @primary;
+}
+
+h2 {
+  color: @secondary;
 }
 
 h3 {
-    font-weight: lighter;
+  color: @primary;
+  font-weight: lighter;
 }
+
 
 .intro h1 {
+  color: @secondary;
+  @media(min-width: 800px) {
     font-size: 5.5em;
-    color: #61161A;
+  }
 }
 
-.section {
-    &.about {
-        margin-top: 50px;
-        padding-bottom: 100px;
-    }
+header.fixed-navigation {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
 
-    &.members .member {
-        margin-bottom: 50px;
+nav {
+  padding: 0 !important;
+  background: white;
+  .navbar-brand > img {
+    max-width: 150px
+  }
+
+  .navbar-toggler {
+    margin-top: 30px;
+  }
+  &.navbar li {
+    a {
+      font-size: 1.2em;
+      color: white;
     }
+    &.support {
+      margin-left: 35px;
+      text-decoration: underline;
+    }
+  }
+}
+
+.content-wrapper {
+
+}
+
+.main-logo {
+  max-height: 500px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+.welcome {
+  position: relative;
+}
+
+.intro {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+.section {
+  &.about {
+    margin-top: 50px;
+  }
+
+  &.members .member {
+    margin-bottom: 50px;
+  }
+  h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .way-to-contact.direct {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .way-to-contact.direct h3 {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .way-to-contact.direct div {
-    font-size: 22px;
-    color: #333;
+  font-size: 22px;
+  color: #333;
 }
 
 .parallax {
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 120px;
-    &.mikro {
-        min-height: 800px;
-        background-image: url(../images/mikrologo1.jpg);
-    }
-    &.upcoming {
-        background-image: url(https://static1.squarespace.com/static/519a41eae4b00c954c6074d0/51b204b5e4b016cb6cb4c970/51b204bbe4b016cb6cb4cbc7/1370621203014/Stendig-Calendar.jpg);
-    }
-    &.music {
-        background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/16/article-2540893-1AB759DE00000578-439_634x586.jpg);
-    }
-    //&.members {
-    //    min-height: 500px;
-    //    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Distorted_Harmony_band_members.jpg);
-    //}
-    &.support {
-        background-position-y: 100px;
-        min-height: 200px;
-        background-image: url(http://orig07.deviantart.net/3e07/f/2016/196/a/6/a_giant_superhero_in_paris_by_bradsnoopy97-daa2rbm.png);
-    }
-    &.contact {
-        background-image: url(http://cdn.trendhunterstatic.com/thumbs/tele2-giant-phone.jpeg);
-    }
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 120px;
+  &.mikro {
+    min-height: 450px;
+    background-image: url(../images/mikrologo1.jpg);
+  }
+  &.upcoming {
+    //background-image: url(https://static1.squarespace.com/static/519a41eae4b00c954c6074d0/51b204b5e4b016cb6cb4c970/51b204bbe4b016cb6cb4cbc7/1370621203014/Stendig-Calendar.jpg);
+  }
+  &.music {
+    background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/16/article-2540893-1AB759DE00000578-439_634x586.jpg);
+  }
+  //&.members {
+  //    min-height: 500px;
+  //    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/ba/Distorted_Harmony_band_members.jpg);
+  //}
+  &.support {
+    background-position-y: 100px;
+    min-height: 200px;
+    background-image: url(http://orig07.deviantart.net/3e07/f/2016/196/a/6/a_giant_superhero_in_paris_by_bradsnoopy97-daa2rbm.png);
+  }
+  &.contact {
+    background-image: url(http://cdn.trendhunterstatic.com/thumbs/tele2-giant-phone.jpeg);
+  }
+  @media(max-width: 600px) {
+    min-height: 200px !important;
+  }
 }
 
-.section {
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    /*padding-top: 150px;*/
-    &.support {
-        .way-to-support {
-        border-left: 4px solid brown;
-        padding: 15px;
-        margin-top: 20px;
-        }
-        .patreon-image {
-            img {
-                min-height: 420px;
-            }
-
-        }
+.content-wrapper > .section {
+  position: relative;
+  padding-bottom: 40px;
+  /*padding-top: 150px;*/
+  &.support {
+    .way-to-support {
+      border-left: 4px solid brown;
+      padding: 15px;
+      margin-top: 20px;
     }
+    .patreon-image {
+      img {
+        min-height: 420px;
+      }
+    }
+  }
 }
 
-.section h1 {
-    margin-bottom: 20px;
-}
 
 .members .member {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .footer-container {
-    background: white;
+  a {
+    color: @primary
+  }
 }
 
-
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 footer .logo {
-    max-width: 400px;
+  max-width: 400px;
 }

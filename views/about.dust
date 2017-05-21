@@ -1,0 +1,4 @@
+<div id="about" class="about container body section" data-spy="scroll" data-target="#scrollspy-nav">
+    <h1>{title}</h1>
+    {description|s}
+</div>
