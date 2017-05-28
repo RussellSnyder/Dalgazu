@@ -10,22 +10,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav navbar-right ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about">Über Uns</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#upcoming">Upcoming</a>
+                <a class="nav-link" href="#upcoming">Termine</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#music">Music</a>
+                <a class="nav-link" href="#music">Musik</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#members">Members</a>
+                <a class="nav-link" href="#members">Mitglieder</a>
             </li>
             <li class="nav-item support">
-                <a class="nav-link" href="#support">Support Us!</a>
+                <a class="nav-link" href="#support">Unterstützung</a>
             </li>
             <li class="nav-item contact">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">Kontakt</a>
             </li>
         </ul>
     </div>

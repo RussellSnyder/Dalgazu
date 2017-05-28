@@ -98,25 +98,17 @@ nav.navbar li.support {
   background-size: cover;
   background-position-y: 120px;
 }
-.parallax.mikro {
-  min-height: 450px;
-  background-image: url(../images/mikrologo1.jpg);
-}
-.parallax.music {
-  background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/16/article-2540893-1AB759DE00000578-439_634x586.jpg);
-}
-.parallax.support {
-  background-position-y: 100px;
-  min-height: 200px;
-  background-image: url(http://orig07.deviantart.net/3e07/f/2016/196/a/6/a_giant_superhero_in_paris_by_bradsnoopy97-daa2rbm.png);
-}
-.parallax.contact {
-  background-image: url(http://cdn.trendhunterstatic.com/thumbs/tele2-giant-phone.jpeg);
-}
 @media (max-width: 600px) {
   .parallax {
-    min-height: 200px !important;
+    min-height: 5px !important;
+    background-image: none !important;
+    background-color: #D49B6B;
+    opacity: 0.7;
   }
+}
+.parallax.mikro {
+  min-height: 550px;
+  background-image: url(../images/mikrologo1.jpg);
 }
 .content-wrapper > .section {
   position: relative;

@@ -128,12 +128,9 @@ client.getEntries({
                 }
             })
         }
-        console.log(data);
         renderSection(data, 'contact');
     })
 })
-
-renderSection({}, 'contact');
 
 
 // nav and Footer

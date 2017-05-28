@@ -3,7 +3,7 @@
 </div>
 
 <div id="upcoming" class="upcoming container body section" data-spy="scroll" data-target="#scrollspy-nav">
-    <h1>Upcoming</h1>
+    <h1>{title}</h1>
     <div class="row">
     <div class="col-md-6">
         {#events}
