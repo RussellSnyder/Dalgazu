@@ -12,7 +12,7 @@
         {?waysToSupport}
             <div class="ways-to-support row">
                 {#waysToSupport}
-                    <div class="col-md-6 way-to-support">
+                    <div class="col-md-12 way-to-support">
                         <h3>{title}</h3>
                         <div class="image">
                             <a href="{link}" target="_blank">
