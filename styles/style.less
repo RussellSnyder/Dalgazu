@@ -33,6 +33,10 @@ h3 {
 
 .intro h1 {
   color: @secondary;
+  display: none;
+  @media(min-width: 600px) {
+    display: block;
+  }
   @media(min-width: 800px) {
     font-size: 5.5em;
   }

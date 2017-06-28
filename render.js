@@ -99,11 +99,13 @@ client.getEntries({
             headline: entry.fields.headline,
             description: markdownToHtml.makeHtml(entry.fields.description),
             waysToSupport: entry.fields.waysToSupport.map(function (m) {
-                return {
-                    title: m.fields.title,
-                    description: markdownToHtml.makeHtml(m.fields.description),
-                    link: m.fields.link,
-                    src: m.fields.photo.fields.file.url
+                if (m.fields) {
+                    return {
+                        title: m.fields.title,
+                        description: markdownToHtml.makeHtml(m.fields.description),
+                        link: m.fields.link,
+                        src: m.fields.photo.fields.file.url
+                    }
                 }
             })
         }
