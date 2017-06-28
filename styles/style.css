@@ -24,6 +24,8 @@ h3 {
   font-weight: lighter;
 }
 .intro h1 {
+  width: 100%;
+  text-align: center;
   color: #D49B6B;
   display: none;
 }
@@ -49,11 +51,20 @@ nav {
   padding: 0 !important;
   background: white;
 }
+nav .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 nav .navbar-brand > img {
-  max-width: 150px;
+  max-width: 90px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+nav .navbar-collapse {
+  padding-bottom: 20px;
 }
 nav .navbar-toggler {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 nav.navbar li a {
   font-size: 1.2em;
@@ -65,7 +76,7 @@ nav.navbar li.support {
 }
 .main-logo {
   max-height: 500px;
-  margin-top: 90px;
+  margin-top: 52px;
   margin-bottom: 20px;
 }
 .welcome {

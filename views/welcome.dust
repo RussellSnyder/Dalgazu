@@ -1,5 +1,7 @@
-<div class="intro">
-    <h1>{title}</h1>
-    <h3>{subtitle}</h3>
+<div class="intro container">
+    <div class="row">
+        <h1>{title}</h1>
+        <h3>{subtitle}</h3>
+    </div>
 </div>
 <img src="{logo}" class="main-logo img-fluid mx-auto d-block" alt="{title}">
