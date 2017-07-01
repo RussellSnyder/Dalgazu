@@ -1,7 +1,12 @@
 <div class="intro container">
-    <div class="row">
-        <h1>{title}</h1>
-        <h3>{subtitle}</h3>
+    <img src="{logo}" class="main-logo img-fluid mx-auto d-block" alt="{title}">
+    <div class="row tags hidden-xs-down">
+        {!<h1>{title}</h1>!}
+        <ul>
+            <li>&nbsp;&nbsp;TURKISH</li>
+            <li>LATIN</li>
+            <li>&nbsp;&nbsp;JAZZ</li>
+        </ul>
     </div>
+    <h3 class="hidden-sm-up">{subtitle}</h3>
 </div>
-<img src="{logo}" class="main-logo img-fluid mx-auto d-block" alt="{title}">

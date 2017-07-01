@@ -1,42 +1,37 @@
 * {
-  color: white;
+  color: black;
 }
 p {
   line-height: 29px;
 }
 body {
-  background: black;
+  background: white;
   position: relative;
 }
 h1,
 h2,
 h3 {
-  font-family: 'Sigmar One', cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 h1 {
-  color: #CDA307;
+  color: #a86731;
 }
 h2 {
-  color: #D49B6B;
+  color: #131B27;
 }
 h3 {
-  color: #CDA307;
+  color: #a86731;
   font-weight: lighter;
 }
 .intro h1 {
   width: 100%;
   text-align: center;
-  color: #D49B6B;
+  color: #131B27;
   display: none;
 }
 @media (min-width: 600px) {
   .intro h1 {
     display: block;
-  }
-}
-@media (min-width: 800px) {
-  .intro h1 {
-    font-size: 5.5em;
   }
 }
 header.fixed-navigation {
@@ -55,13 +50,13 @@ nav .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
 }
-nav .navbar-brand > img {
-  max-width: 90px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+@media (min-width: 992px) {
+  nav .navbar-brand > img {
+    margin-top: -10px;
+  }
 }
 nav .navbar-collapse {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 nav .navbar-toggler {
   margin-top: 10px;
@@ -77,17 +72,51 @@ nav.navbar li.support {
 .main-logo {
   max-height: 500px;
   margin-top: 52px;
-  margin-bottom: 20px;
+  margin-bottom: -80px;
 }
 .welcome {
   position: relative;
+  padding-bottom: 0 !important;
+  margin-bottom: -20px;
 }
-.intro {
+.intro .tags {
   position: absolute;
-  bottom: -30px;
-  left: 0;
-  right: 0;
-  margin: auto;
+}
+@media (min-width: 576px) {
+  .intro .tags {
+    bottom: 31%;
+    right: 14%;
+  }
+}
+@media (min-width: 768px) {
+  .intro .tags {
+    bottom: 31%;
+    right: 22%;
+  }
+}
+@media (min-width: 992px) {
+  .intro .tags {
+    bottom: 31%;
+    right: 29%;
+  }
+}
+@media (min-width: 1200px) {
+  .intro .tags {
+    bottom: 31%;
+    right: 32%;
+  }
+}
+.intro .tags ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.intro .tags li {
+  color: #131B27;
+  font-size: 20px;
+  line-height: 20px;
+}
+.intro h3 {
   text-align: center;
 }
 .section.about {
@@ -116,14 +145,14 @@ nav.navbar li.support {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: 120px;
 }
 @media (max-width: 600px) {
   .parallax {
-    min-height: 5px !important;
+    min-height: 10px !important;
     background-image: none !important;
-    background-color: #D49B6B;
-    opacity: 0.7;
+    background-color: #131B27;
+    margin-left: 15px;
+    border-top: solid 5px #a86731;
   }
 }
 .parallax.mikro {
@@ -147,7 +176,7 @@ nav.navbar li.support {
   margin-bottom: 15px;
 }
 .footer-container a {
-  color: #CDA307;
+  color: #a86731;
 }
 footer {
   text-align: center;
