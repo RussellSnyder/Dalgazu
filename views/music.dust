@@ -11,18 +11,27 @@
                     frameborder="0" allowfullscreen></iframe>
         </div>
     {/featureVideo}
-    {?music}
-        <div class="row music container mt-3">
-            {#music}
-                <div class="col-md-6 music-single">
-                    <h5>{title}  <small class="ml-2">({date})</small></h5>
-                    <audio controls class="w-100">
-                        <source src="{src}" type="audio/mpeg">
-                    </audio>
-                </div>
-            {/music}
+    <div class="row music container mt-3">
+        {!{?music}!}
+            {!<div class="col-md-6">!}
+                {!{#music}!}
+                    {!<div class="music-single">!}
+                        {!<h5>{title}!}
+                            {!<small class="ml-2">({date})</small>!}
+                        {!</h5>!}
+                        {!<audio controls class="w-100">!}
+                            {!<source src="{src}" type="audio/mpeg">!}
+                        {!</audio>!}
+                    {!</div>!}
+                {!{/music}!}
+            {!</div>!}
+        {!{/music}!}
+        <div class="col-md-8 offset-md-2">
+            <iframe style="border: 0; width: 100%; height: 340px;"
+                    src="https://bandcamp.com/EmbeddedPlayer/album=3159251444/size=large/bgcol=ffffff/linkcol=63b2cc/artwork=small/transparent=true/"
+                    seamless><a href="http://dalgazul.bandcamp.com/album/dalgazul">Dalgazul by Dalgazul</a></iframe>
         </div>
-    {/music}
+    </div>
     {?text}
         <div class="text text-center mt-4">
             {text|s}
