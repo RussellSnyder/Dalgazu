@@ -50,7 +50,6 @@ client.getEntries({
     entries.items.forEach(function (entry) {
         var data = {
             parallaxPhoto: entry.fields.parallaxPhoto.fields.file.url,
-            parallaxPhoto: entry.fields.parallaxPhoto.fields.file.url,
             parallaxHeight: entry.fields.parallaxHeight,
             title: entry.fields.title,
             members: entry.fields.members.map(function (m) {
@@ -60,7 +59,6 @@ client.getEntries({
                 return data;
             })
         }
-        renderSection(data, 'members');
         renderSection(data, 'members');
     })
 })
@@ -143,9 +141,9 @@ $(document).ready(function () {
 
             $("nav ul li a[href^='#']").on('click', function (e) {
                 e.preventDefault();
-                var hash =  this.hash.substring(1, this.hash.length);
+                var hash = this.hash.substring(1, this.hash.length);
                 $('html, body').animate({
-                    scrollTop: $('.section.body.' + hash).offset().top - $('.navbar').height()
+                    scrollTop: $('#' + hash).offset().top
                 }, 500, function () {
                     window.location.hash = hash;
                 });
@@ -171,7 +169,7 @@ $(document).ready(function () {
 function renderSection(data, name) {
     dust.render(name, data,
         function (err, out) {
-            $('#' + name).html(out);
+            $('#' + name + '-section').html(out);
         });
 }
 

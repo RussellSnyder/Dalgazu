@@ -3,7 +3,7 @@
              min-height: {parallaxHeight}px">
 </div>
 
-<div class="music container body section" data-spy="scroll" data-target="#scrollspy-nav">
+<div id="music" class="music container body section" data-spy="scroll" data-target="#scrollspy-nav">
     <h1>{headline}</h1>
     {?featureVideo}
         <div class="embed-responsive embed-responsive-16by9">

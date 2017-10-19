@@ -119,6 +119,9 @@ nav.navbar li.support {
 .intro h3 {
   text-align: center;
 }
+.section {
+  padding-top: 40px;
+}
 .section.about {
   margin-top: 50px;
 }

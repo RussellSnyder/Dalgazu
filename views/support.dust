@@ -3,7 +3,7 @@
              min-height: {parallaxHeight}px">
 </div>
 
-<div class="support container section body" data-spy="scroll" data-target="#scrollspy-nav">
+<div class="support container section body" id="support" data-spy="scroll" data-target="#scrollspy-nav">
     <h1>{headline}</h1>
     <div class="row">
         <div class="description col-lg-12">
